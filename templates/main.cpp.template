@@ -12,22 +12,19 @@ int main(int argc, char* argv[]) {
                       expectedArgc, argc - 1);
         return 1;
     }
-    auto input = CastInput(argv[1]);
+    auto input = CastInput<int>(argv[1]);
     if (!input) {
         spdlog::error("Invalid input for problem's input");
         return 1;
     }
-    auto expectedResult = CastInput(argv[2]);
+    auto expectedResult = CastInput<int>(argv[2]);
     if (!expectedResult) {
         spdlog::error("Invalid input for expected result");
         return 1;
     }
 
     auto result = EvaluateExercise(input.value());
-    if (result == expectedResult.value()) {
-        spdlog::info("Exercise has passed");
-        return 0;
-    }
+    spdlog::info("{}", result);
 
-    return 1;
+    return 0;
 }

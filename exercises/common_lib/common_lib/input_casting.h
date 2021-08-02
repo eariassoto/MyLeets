@@ -1,5 +1,7 @@
 // Copyright (c) 2021 Emmanuel Arias
 #pragma once
 #include <optional>
+#include <vector>
 
-std::optional<int> CastInput(const char* input);
+template <typename T>
+std::optional<T> CastInput(const char* input);

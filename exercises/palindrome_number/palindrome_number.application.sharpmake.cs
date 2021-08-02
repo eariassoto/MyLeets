@@ -4,11 +4,11 @@ using Sharpmake;
 [module: Sharpmake.Include("../common_lib/common_lib.library.sharpmake.cs")]
 
 [Generate]
-class test_Exercise : BaseProject
+class palindrome_number_Exercise : BaseProject
 {
-    public test_Exercise()
+    public palindrome_number_Exercise()
     {
-        Name = "test";
+        Name = "palindrome_number";
 
         AddTargets(
             new Target(
