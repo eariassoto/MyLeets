@@ -4,6 +4,7 @@ using System.IO;
 
 [module: Sharpmake.Include("common.sharpmake.cs")]
 
+[module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/two_sum_n2/two_sum_n2.application.sharpmake.cs")]
@@ -29,6 +30,7 @@ namespace MyLeets
         public override void ConfigureAll(Configuration conf, Target target)
         {
             base.ConfigureAll(conf, target);
+            conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);
             conf.AddProject<two_sum_n2_Exercise>(target);
