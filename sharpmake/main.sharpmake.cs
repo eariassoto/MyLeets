@@ -4,6 +4,11 @@ using System.IO;
 
 [module: Sharpmake.Include("common.sharpmake.cs")]
 
+[module: Sharpmake.Include("../exercises/cci_1_1_is_unique/cci_1_1_is_unique.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_2_check_permutation/cci_1_2_check_permutation.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_3_urlify/cci_1_3_urlify.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_4_palindrome_permutation/cci_1_4_palindrome_permutation.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_5_one_away/cci_1_5_one_away.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
@@ -30,6 +35,11 @@ namespace MyLeets
         public override void ConfigureAll(Configuration conf, Target target)
         {
             base.ConfigureAll(conf, target);
+            conf.AddProject<cci_1_1_is_unique_Exercise>(target);
+            conf.AddProject<cci_1_2_check_permutation_Exercise>(target);
+            conf.AddProject<cci_1_3_urlify_Exercise>(target);
+            conf.AddProject<cci_1_4_palindrome_permutation_Exercise>(target);
+            conf.AddProject<cci_1_5_one_away_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);
