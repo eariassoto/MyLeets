@@ -1,6 +1,4 @@
 // Copyright (c) 2021 Emmanuel Arias
-
-#include <common_lib/input_casting.h>
 #include <spdlog/spdlog.h>
 
 #include <array>

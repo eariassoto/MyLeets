@@ -1,6 +1,5 @@
 // Copyright (c) 2021 Emmanuel Arias
-
-#include <common_lib/input_casting.h>
+#include <common_lib/printing.h>
 #include <spdlog/spdlog.h>
 
 #include <sstream>
@@ -80,18 +79,6 @@ void RotateMatrix(std::vector<std::vector<int>>& input) {
             input[i][last] = auxTop;
         }
     }
-}
-
-void PrintMatrix(const std::vector<std::vector<int>>& matrix) {
-    std::stringstream aux;
-    aux << '\n';
-    for (const auto& row : matrix) {
-        for (const int col : row) {
-            aux << col << " ";
-        }
-        aux << '\n';
-    }
-    spdlog::info("{}", aux.str());
 }
 
 int main(int argc, char* argv[]) {

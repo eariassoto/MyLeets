@@ -11,6 +11,15 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/cci_1_5_one_away/cci_1_5_one_away.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/cci_1_6_string_compressor/cci_1_6_string_compressor.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/cci_1_7_rotate_matrix/cci_1_7_rotate_matrix.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_8_zero_matrix/cci_1_8_zero_matrix.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_1_9_string_rotation/cci_1_9_string_rotation.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_1_delete_duplicates/cci_2_1_delete_duplicates.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_2_return_kth_to_last/cci_2_2_return_kth_to_last.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_3_delete_middle_node/cci_2_3_delete_middle_node.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_4_partition/cci_2_4_partition.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_5_sum_lists_least_sig_first/cci_2_5_sum_lists_least_sig_first.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_5_sum_lists_most_sig_first/cci_2_5_sum_lists_most_sig_first.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/cci_2_6_palindrom_linked_list/cci_2_6_palindrom_linked_list.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
@@ -44,6 +53,15 @@ namespace MyLeets
             conf.AddProject<cci_1_5_one_away_Exercise>(target);
             conf.AddProject<cci_1_6_string_compressor_Exercise>(target);
             conf.AddProject<cci_1_7_rotate_matrix_Exercise>(target);
+            conf.AddProject<cci_1_8_zero_matrix_Exercise>(target);
+            conf.AddProject<cci_1_9_string_rotation_Exercise>(target);
+            conf.AddProject<cci_2_1_delete_duplicates_Exercise>(target);
+            conf.AddProject<cci_2_2_return_kth_to_last_Exercise>(target);
+            conf.AddProject<cci_2_3_delete_middle_node_Exercise>(target);
+            conf.AddProject<cci_2_4_partition_Exercise>(target);
+            conf.AddProject<cci_2_5_sum_lists_least_sig_first_Exercise>(target);
+            conf.AddProject<cci_2_5_sum_lists_most_sig_first_Exercise>(target);
+            conf.AddProject<cci_2_6_palindrom_linked_list_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);

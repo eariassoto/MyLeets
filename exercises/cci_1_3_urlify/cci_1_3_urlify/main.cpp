@@ -1,7 +1,7 @@
 // Copyright (c) 2021 Emmanuel Arias
-
-#include <common_lib/input_casting.h>
 #include <spdlog/spdlog.h>
+
+#include <string>
 
 /* URLify
  * This is a classic problem of in-place string replacement, we know that we
