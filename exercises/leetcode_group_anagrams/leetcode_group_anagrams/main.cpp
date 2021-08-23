@@ -37,15 +37,22 @@ std::vector<std::vector<std::string>> groupAnagrams(
     std::vector<std::string>& strs) {
     Alphabet key;
 
-    std::map<Alphabet, std::vector<std::string>> dictionary;
-    for (const std::string str : strs) {
-        fillAlphabetFromString(str, key);
-        dictionary[key].push_back(str);
+    std::map<Alphabet, std::vector<int>> dictionary;
+    for (int i = 0; i < (int)strs.size(); ++i) {
+        fillAlphabetFromString(strs[i], key);
+        dictionary[key].push_back(i);
     }
 
     std::vector<std::vector<std::string>> output;
-    for (const auto& [key, value] : dictionary) {
-        output.push_back(value);
+    output.resize(dictionary.size());
+
+    int aux = 0;
+    for (const auto& [key, values] : dictionary) {
+        output[aux].resize(values.size());
+        for (int j = 0; j < (int)values.size(); ++j) {
+            output[aux][j] = strs[values[j]];
+        }
+        ++aux;
     }
     return output;
 }
