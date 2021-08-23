@@ -23,6 +23,8 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/cci_2_7_intersection/cci_2_7_intersection.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_container_most_water/leetcode_container_most_water.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_count_and_say/leetcode_count_and_say.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_find_peak_element/leetcode_find_peak_element.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_group_anagrams/leetcode_group_anagrams.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
@@ -68,6 +70,8 @@ namespace MyLeets
             conf.AddProject<cci_2_7_intersection_Exercise>(target);
             conf.AddProject<leetcode_container_most_water_Exercise>(target);
             conf.AddProject<leetcode_count_and_say_Exercise>(target);
+            conf.AddProject<leetcode_find_peak_element_Exercise>(target);
+            conf.AddProject<leetcode_group_anagrams_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);
