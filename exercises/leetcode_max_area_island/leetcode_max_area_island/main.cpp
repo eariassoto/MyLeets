@@ -42,22 +42,23 @@ void addNeighborsToStack(const std::pair<int, int>& cellPos,
     }
 }
 
-int numIslands(std::vector<std::vector<char>>& grid) {
+int maxAreaOfIsland(std::vector<std::vector<int>>& grid) {
     // First we add into a lookup set all the possible islands
     std::set<std::pair<int, int>> islandGrids;
     for (int y = 0; y < (int)grid.size(); ++y) {
-        const std::vector<char>& row = grid[y];
+        const std::vector<int>& row = grid[y];
         for (int x = 0; x < (int)row.size(); ++x) {
-            if (row[x] == '1') {
+            if (row[x] == 1) {
                 islandGrids.insert({x, y});
             }
         }
     }
 
-    int numIslands = 0;
+    int maxArea = 0;
     std::stack<std::pair<int, int>> lookupStack;
 
     while (!islandGrids.empty()) {
+        int currentArea = 0;
         auto nextGrid = *islandGrids.begin();
 
         lookupStack.push(nextGrid);
@@ -67,23 +68,24 @@ int numIslands(std::vector<std::vector<char>>& grid) {
         while (!lookupStack.empty()) {
             auto cellPos = lookupStack.top();
             lookupStack.pop();
+            ++currentArea;
 
             // Try to add neighbors
             addNeighborsToStack(cellPos, islandGrids, lookupStack);
         }
 
-        ++numIslands;
+        if (currentArea > maxArea) {
+            maxArea = currentArea;
+        }
     }
 
-    return numIslands;
+    return maxArea;
 }
 
 int main(int argc, char* argv[]) {
-    std::vector<std::vector<char>> grid{{'1', '1', '1', '1', '0'},
-                                        {'1', '1', '0', '1', '0'},
-                                        {'1', '1', '0', '0', '1'},
-                                        {'0', '0', '1', '0', '1'}};
-    int n = numIslands(grid);
+    std::vector<std::vector<int>> grid{
+        {1, 1, 1, 1, 0}, {1, 1, 0, 1, 0}, {1, 1, 0, 0, 1}, {0, 0, 1, 0, 1}};
+    int n = maxAreaOfIsland(grid);
 
     spdlog::info("{}", n);
     return 0;
