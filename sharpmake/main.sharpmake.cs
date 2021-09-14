@@ -28,7 +28,9 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/leetcode_h_index/leetcode_h_index.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_longest_string_chain/leetcode_longest_string_chain.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_max_area_island/leetcode_max_area_island.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_minimum_path_sum/leetcode_minimum_path_sum.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_number_of_islands/leetcode_number_of_islands.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_search_matrix_2d/leetcode_search_matrix_2d.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
@@ -79,7 +81,9 @@ namespace MyLeets
             conf.AddProject<leetcode_h_index_Exercise>(target);
             conf.AddProject<leetcode_longest_string_chain_Exercise>(target);
             conf.AddProject<leetcode_max_area_island_Exercise>(target);
+            conf.AddProject<leetcode_minimum_path_sum_Exercise>(target);
             conf.AddProject<leetcode_number_of_islands_Exercise>(target);
+            conf.AddProject<leetcode_search_matrix_2d_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);
