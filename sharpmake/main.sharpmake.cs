@@ -26,6 +26,7 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/leetcode_find_peak_element/leetcode_find_peak_element.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_group_anagrams/leetcode_group_anagrams.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_h_index/leetcode_h_index.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_letter_combinations_phone_number/leetcode_letter_combinations_phone_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_longest_string_chain/leetcode_longest_string_chain.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_max_area_island/leetcode_max_area_island.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_minimum_path_sum/leetcode_minimum_path_sum.application.sharpmake.cs")]
@@ -79,6 +80,7 @@ namespace MyLeets
             conf.AddProject<leetcode_find_peak_element_Exercise>(target);
             conf.AddProject<leetcode_group_anagrams_Exercise>(target);
             conf.AddProject<leetcode_h_index_Exercise>(target);
+            conf.AddProject<leetcode_letter_combinations_phone_number_Exercise>(target);
             conf.AddProject<leetcode_longest_string_chain_Exercise>(target);
             conf.AddProject<leetcode_max_area_island_Exercise>(target);
             conf.AddProject<leetcode_minimum_path_sum_Exercise>(target);
