@@ -32,6 +32,7 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/leetcode_minimum_path_sum/leetcode_minimum_path_sum.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_number_of_islands/leetcode_number_of_islands.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_search_matrix_2d/leetcode_search_matrix_2d.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leet_code_eval_rev_polish/leet_code_eval_rev_polish.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/reverse_integer/reverse_integer.application.sharpmake.cs")]
@@ -86,6 +87,7 @@ namespace MyLeets
             conf.AddProject<leetcode_minimum_path_sum_Exercise>(target);
             conf.AddProject<leetcode_number_of_islands_Exercise>(target);
             conf.AddProject<leetcode_search_matrix_2d_Exercise>(target);
+            conf.AddProject<leet_code_eval_rev_polish_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
             conf.AddProject<reverse_integer_Exercise>(target);
