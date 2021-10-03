@@ -21,8 +21,10 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/cci_2_5_sum_lists_most_sig_first/cci_2_5_sum_lists_most_sig_first.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/cci_2_6_palindrom_linked_list/cci_2_6_palindrom_linked_list.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/cci_2_7_intersection/cci_2_7_intersection.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/geeksforgeeks_longest_substr_k_unique_char/geeksforgeeks_longest_substr_k_unique_char.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_container_most_water/leetcode_container_most_water.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_count_and_say/leetcode_count_and_say.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_divide_two_integers/leetcode_divide_two_integers.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_find_peak_element/leetcode_find_peak_element.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_group_anagrams/leetcode_group_anagrams.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_h_index/leetcode_h_index.application.sharpmake.cs")]
@@ -32,6 +34,8 @@ using System.IO;
 [module: Sharpmake.Include("../exercises/leetcode_minimum_path_sum/leetcode_minimum_path_sum.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_number_of_islands/leetcode_number_of_islands.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leetcode_search_matrix_2d/leetcode_search_matrix_2d.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_string_anagram/leetcode_string_anagram.application.sharpmake.cs")]
+[module: Sharpmake.Include("../exercises/leetcode_word_break/leetcode_word_break.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/leet_code_eval_rev_polish/leet_code_eval_rev_polish.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/mergesort/mergesort.application.sharpmake.cs")]
 [module: Sharpmake.Include("../exercises/palindrome_number/palindrome_number.application.sharpmake.cs")]
@@ -76,8 +80,10 @@ namespace MyLeets
             conf.AddProject<cci_2_5_sum_lists_most_sig_first_Exercise>(target);
             conf.AddProject<cci_2_6_palindrom_linked_list_Exercise>(target);
             conf.AddProject<cci_2_7_intersection_Exercise>(target);
+            conf.AddProject<geeksforgeeks_longest_substr_k_unique_char_Exercise>(target);
             conf.AddProject<leetcode_container_most_water_Exercise>(target);
             conf.AddProject<leetcode_count_and_say_Exercise>(target);
+            conf.AddProject<leetcode_divide_two_integers_Exercise>(target);
             conf.AddProject<leetcode_find_peak_element_Exercise>(target);
             conf.AddProject<leetcode_group_anagrams_Exercise>(target);
             conf.AddProject<leetcode_h_index_Exercise>(target);
@@ -87,6 +93,8 @@ namespace MyLeets
             conf.AddProject<leetcode_minimum_path_sum_Exercise>(target);
             conf.AddProject<leetcode_number_of_islands_Exercise>(target);
             conf.AddProject<leetcode_search_matrix_2d_Exercise>(target);
+            conf.AddProject<leetcode_string_anagram_Exercise>(target);
+            conf.AddProject<leetcode_word_break_Exercise>(target);
             conf.AddProject<leet_code_eval_rev_polish_Exercise>(target);
             conf.AddProject<mergesort_Exercise>(target);
             conf.AddProject<palindrome_number_Exercise>(target);
